@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mymental">
 
+    <!-- CAMERA permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -42,6 +46,12 @@
             android:name=".DashboardActivity"
             android:exported="true"
             android:theme="@style/Theme.MyMental" />
+
+        <activity
+            android:name=".CameraActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyMental" />
+
     </application>
 
 </manifest>

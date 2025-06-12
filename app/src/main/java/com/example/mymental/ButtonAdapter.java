@@ -1,5 +1,8 @@
 package com.example.mymental;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +14,11 @@ import java.util.List;
 public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ButtonViewHolder> {
 
     private final List<String> buttonLabels;
+    private final Activity activity;
 
-    public ButtonAdapter(List<String> buttonLabels) {
+    public ButtonAdapter(List<String> buttonLabels, Activity activity) {
         this.buttonLabels = buttonLabels;
+        this.activity = activity;
     }
 
     @NonNull
@@ -30,9 +35,14 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ButtonView
         holder.button.setText(label);
 
         holder.button.setOnClickListener(v -> {
-            // Handle button click
-            // For example: Toast.makeText(v.getContext(), label + " clicked", Toast.LENGTH_SHORT).show();
+            if (label.equals("Camera")) {
+                Intent intent = new Intent(activity, CameraActivity.class);
+                activity.startActivity(intent);
+            } else {
+                // Handle other buttons if needed
+            }
         });
+
     }
 
     @Override
