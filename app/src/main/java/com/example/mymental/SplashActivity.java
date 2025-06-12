@@ -10,13 +10,13 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash); // <-- Use your layout file name here
+        setContentView(R.layout.splash); // your splash layout
 
-        // Delay for 2 seconds, then launch MainActivity
+        // Delay for 2 seconds, then go to LoginActivity
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(intent);
-            finish(); // Prevent returning to splash
-        }, 2000); // 2000 ms = 2 seconds
+            finish(); // close SplashActivity so user can't go back to it
+        }, 2000); // 2000 milliseconds = 2 seconds
     }
 }

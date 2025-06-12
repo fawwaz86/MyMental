@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mymental">
 
     <application
         android:allowBackup="true"
@@ -13,7 +14,7 @@
         android:theme="@style/Theme.MyMental"
         tools:targetApi="31">
 
-        <!-- SplashActivity -->
+        <!-- SplashActivity (Launcher) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -24,13 +25,18 @@
             </intent-filter>
         </activity>
 
-        <!-- MainActivity (opened after splash) -->
+        <!-- LoginActivity (after splash) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyMental" />
+
+        <!-- MainActivity (after login) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MyMental" />
 
     </application>
-
 
 </manifest>
