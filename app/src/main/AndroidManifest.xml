@@ -37,6 +37,11 @@
             android:exported="true"
             android:theme="@style/Theme.MyMental" />
 
+        <!-- DashboardActivity (after login) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyMental" />
     </application>
 
 </manifest>

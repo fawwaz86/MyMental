@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
         Button loginButton = findViewById(R.id.buttonLogin);
         loginButton.setOnClickListener(v -> {
             // You can add real login logic here
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
             startActivity(intent);
             finish(); // prevent going back to login
         });
