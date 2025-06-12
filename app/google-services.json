@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214551387338",
+    "project_id": "mymental-3da54",
+    "storage_bucket": "mymental-3da54.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214551387338:android:4d12bf5776e03046c2e833",
+        "android_client_info": {
+          "package_name": "com.example.mymental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOQ76nJAQC0AEY7cnRNYJGT1lyEzkXoKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
