@@ -52,6 +52,12 @@
             android:exported="true"
             android:theme="@style/Theme.MyMental" />
 
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyMental" />
+
+
     </application>
 
 </manifest>
