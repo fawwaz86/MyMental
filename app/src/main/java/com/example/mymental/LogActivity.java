@@ -1,4 +1,4 @@
-package com.example.locationsensor;
+package com.example.mymental;
 
 import android.os.Bundle;
 import android.view.View;

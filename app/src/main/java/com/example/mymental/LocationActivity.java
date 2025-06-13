@@ -1,4 +1,4 @@
-package com.example.locationsensor;
+package com.example.mymental;
 
 import android.Manifest;
 import android.content.Intent;

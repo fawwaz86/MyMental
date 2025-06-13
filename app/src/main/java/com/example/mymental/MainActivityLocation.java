@@ -1,4 +1,4 @@
-package com.example.locationsensor;
+package com.example.mymental;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivityLocation extends AppCompatActivity {
 
     Button btnOpenLocation;
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnOpenLocation = findViewById(R.id.btn_open_location);
         btnOpenLocation.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LocationActivity.class);
+            Intent intent = new Intent(MainActivityLocation.this, LocationActivity.class);
             startActivity(intent);
         });
     }
