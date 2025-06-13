@@ -45,7 +45,7 @@ dependencies {
     implementation(libs.firebase.database)
 
     implementation("com.google.firebase:firebase-auth:22.3.1")
-
+    implementation("com.google.android.gms:play-services-location:21.0.1") //google maps
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
