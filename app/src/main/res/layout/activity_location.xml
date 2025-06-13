@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for location..."
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place will appear here"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- This is the missing TextView -->
+    <TextView
+        android:id="@+id/textView_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make sure to go outside than being in same place."
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btn_go_outside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Outside"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
