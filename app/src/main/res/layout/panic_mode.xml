@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanicMode"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shake the phone if you need help!"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+</RelativeLayout>

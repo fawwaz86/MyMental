@@ -16,7 +16,7 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         RecyclerView recyclerView = findViewById(R.id.buttonRecyclerView);
-        List<String> buttonLabels = Arrays.asList("Button 1", "Button 2", "Camera", "Button 4");
+        List<String> buttonLabels = Arrays.asList("Panic", "Microphone", "Camera", "Location");
 
         ButtonAdapter adapter = new ButtonAdapter(buttonLabels, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
